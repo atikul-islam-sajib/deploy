@@ -26,7 +26,7 @@ class loadDataset:
             
             self._read_csv(dataset = self.dataFrame)
         else:
-            raise "Data Frame should be in the CSV format"
+            raise "Data Frame should be in the CSV format".title()
     
     def _read_csv(self, dataset = None):
         dataset = pd.read_csv(dataset)
